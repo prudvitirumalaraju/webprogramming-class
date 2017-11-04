@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back0"
+    tools:context="com.example.user.imagelocation.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/etRegister"
+        android:id="@+id/etFirstName"
+        android:hint="FirstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etFirstName"
+        android:layout_alignStart="@+id/etFirstName"
+        android:id="@+id/etLastName"
+        android:hint="LastName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etLastName"
+        android:layout_alignStart="@+id/etLastName"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail"
+        android:id="@+id/etbaddress"
+        android:hint="Enter Address" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/etgetaddress"
+        android:onClick="address"
+        android:text="GET ADDRESS"
+        android:layout_below="@+id/etbaddress"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegister"
+        android:layout_marginTop="25dp"
+        android:text="Register"
+        android:layout_below="@+id/etgetaddress"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etImagebutton"
+        android:onClick="upload"
+        android:layout_above="@+id/etbaddress"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        android:id="@+id/etImage"
+        android:layout_above="@+id/etImagebutton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+
+</RelativeLayout>
