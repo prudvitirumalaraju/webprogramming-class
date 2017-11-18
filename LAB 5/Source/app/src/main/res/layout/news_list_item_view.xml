@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_marginBottom="@dimen/eight_dp"
+    android:layout_marginLeft="@dimen/eight_dp"
+    android:layout_marginRight="@dimen/eight_dp"
+    android:layout_marginTop="@dimen/eight_dp"
+    android:background="@drawable/list_item_view_border">
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/four_dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="news headline" />
+
+    <ImageView
+        android:id="@+id/news_thumbnail"
+        android:layout_width="@dimen/thumbnail_dimension"
+        android:layout_height="@dimen/thumbnail_dimension"
+        android:layout_below="@id/headline"
+        android:layout_margin="@dimen/eight_dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_background" />
+
+    <LinearLayout
+        android:id="@+id/news_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headline"
+        android:layout_toRightOf="@id/news_thumbnail"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/eight_dp"
+        android:paddingRight="@dimen/eight_dp"
+        android:paddingTop="@dimen/four_dp">
+
+
+        <TextView
+            android:id="@+id/contributor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/eight_dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/published_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two_dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/section_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two_dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/trail_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/two_dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

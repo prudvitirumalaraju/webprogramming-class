@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Daily News</string>
+    <string-array name="sections">
+        <item>US</item>
+        <item>World</item>
+        <item>Tech</item>
+        <item>Sport</item>
+    </string-array>
+    <string name="loading">Loading . . .</string>
+    <string name="text">text</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="page">page</string>
+    <string name="maxPage">maxPage</string>
+    <string name="toast_end_of_list">you are at the end of the list.</string>
+    <string name="toast_beginning_of_list">you are at the beginning of the list.</string>
+    <string name="empty_text_network">Check network connection!</string>
+    <string name="empty_text_data">Can\'t retrieve data!</string>
+    <string name="empty_button">Try Again!</string>
+    <string name="empty_string" />
+    <string name="adapter_contributor">Contributor:&#160;</string>
+    <string name="adapter_contributor_anonymous">Contributor: Anonymous</string>
+    <string name="adapter_section">Section:&#160; </string>
+    <string name="query_util_api_key_param">api-key</string>
+    <string name="query_util_show_field_param">show-fields</string>
+    <string name="query_util_order_by_param">order-by</string>
+    <string name="query_util_from_date_param">from-date</string>
+    <string name="query_util_to_date_param">to-date</string>
+    <string name="query_util_page_size_param">page-size</string>
+    <string name="query_util_page_param">page</string>
+    <string name="query_util_show_tags_param">show-tags</string>
+    <string name="query_util_error_create_url">error createURL(): can\'t create URL</string>
+    <string name="query_util_error_connection">error downloadJsonResponse(): can\'t make connection</string>
+    <string name="query_util_error_extracting">error extractNews(): parsing problem</string>
+    <string name="query_util_error_bitmap">error makeBitmap(): can\'t open stream</string>
+    <string name="query_util_error_extract_string">error: extractString(), can\'t extract string: </string>
+    <string name="query_util_error_fetch_data">error fetchNewsData(), can\'t downloadJsonResponse </string>
+    <string name="query_util_json_response">response</string>
+    <string name="query_util_json_pages">pages</string>
+    <string name="query_util_json_results">results</string>
+    <string name="query_util_json_section_name">sectionName</string>
+    <string name="query_util_json_web_publication_date">webPublicationDate</string>
+    <string name="query_util_json_web_url">webUrl</string>
+    <string name="query_util_json_tags">tags</string>
+    <string name="query_util_json_web_title">webTitle</string>
+    <string name="query_util_json_fields">fields</string>
+    <string name="query_util_json_headline">headline</string>
+    <string name="query_util_json_trailText">trailText</string>
+    <string name="query_util_json_thumbnail">thumbnail</string>
+</resources>

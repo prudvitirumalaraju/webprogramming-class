@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twenty_dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/minus_eight_dp"
+        android:layout_marginTop="@dimen/minus_eight_dp"
+        android:indeterminate="true"
+        android:theme="@style/LinearProgress" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/loading_bar"
+        android:layout_marginLeft="@dimen/six_dp"
+        android:layout_marginRight="@dimen/six_dp"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/divider_height"
+        android:drawSelectorOnTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="@dimen/loading_text_width"
+            android:layout_height="@dimen/loading_text_height"
+            android:layout_centerInParent="true"
+            android:text="@string/loading"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/empty_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/loading_bar"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_view_image"
+            android:layout_width="@dimen/empty_image_view"
+            android:layout_height="@dimen/empty_image_view" />
+
+        <TextView
+            android:id="@+id/empty_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:textColor="@color/darkGray"
+            android:textSize="16sp"
+            tools:text="@string/text" />
+
+        <Button
+            android:id="@+id/empty_view_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight_dp"
+            tools:text="@string/text" />
+    </LinearLayout>
+
+</RelativeLayout>
